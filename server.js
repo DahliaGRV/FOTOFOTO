@@ -5,6 +5,8 @@ const session = require("express-session");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
+const chalk = require("chalk");
+
 // Sets up the Express App
 
 const app = express();
