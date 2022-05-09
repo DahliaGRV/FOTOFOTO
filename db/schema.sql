@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS picture_perfect_db;
+DROP DATABASE IF EXISTS fotofoto_db;
 
-CREATE DATABASE picture_perfect_db;
+CREATE DATABASE fotofoto_db;
