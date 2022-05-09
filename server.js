@@ -5,19 +5,20 @@ const session = require("express-session");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-const chalk = require("chalk");
-
+// import chalk from 'chalk';
+// console.log(chalk.blue('Hello world!'));
 // Sets up the Express App
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 // Requiring our models for syncing
-const { User, Blog } = require("./models");
+const { User} = require("./models");
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const sess = {
-  secret: "Super secret secret",
+  secret: process.env.SESSION_SECRET,
   cookie: {
     maxAge: 2 * 60 * 60 * 1000
   },
