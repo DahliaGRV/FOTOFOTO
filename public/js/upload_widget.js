@@ -12,6 +12,50 @@ const myWidget = cloudinary.createUploadWidget(
   {
     cloudName: cloudName,
     uploadPreset: uploadPreset,
+    sources: [
+      "local",
+      "url",
+      "camera",
+      "image_search",
+      "google_drive",
+      "facebook",
+      "dropbox",
+      "instagram",
+      "shutterstock",
+      "getty",
+      "istock",
+      "unsplash"
+  ],
+  googleApiKey: "<image_search_google_api_key>",
+  showAdvancedOptions: true,
+  cropping: true,
+  multiple: false,
+  defaultSource: "local",
+  styles: {
+      palette: {
+          window: "#5D005D",
+          sourceBg: "#3A0A3A",
+          windowBorder: "#AD5BA3",
+          tabIcon: "#ffffcc",
+          inactiveTabIcon: "#FFD1D1",
+          menuIcons: "#FFD1D1",
+          link: "#ffcc33",
+          action: "#ffcc33",
+          inProgress: "#00e6b3",
+          complete: "#a6ff6f",
+          error: "#ff1765",
+          textDark: "#3c0d68",
+          textLight: "#fcfffd"
+      },
+      fonts: {
+          default: null,
+          "'Kalam', cursive": {
+              url: "https://fonts.googleapis.com/css?family=Kalam",
+              active: true
+          }
+      }
+  }
+},
     // cropping: true, //add a cropping step
     // showAdvancedOptions: true,  //add advanced options (public_id and tag)
     // sources: [ "local", "url"], // restrict the upload sources to URL and local files
@@ -23,7 +67,7 @@ const myWidget = cloudinary.createUploadWidget(
     // maxImageFileSize: 2000000,  //restrict file size to less than 2MB
     // maxImageWidth: 2000, //Scales the image down to a width of 2000 pixels before uploading
     // theme: "purple", //change to a purple theme
-  },
+
   (error, result) => {
     if (!error && result && result.event === "success") {
       console.log("Done! Here is the image info: ", result.info);
