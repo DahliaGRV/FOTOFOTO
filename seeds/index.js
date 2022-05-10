@@ -1,31 +1,23 @@
-const sequelize = require("../config/connection")
-const {User} = require("../models")
+const sequelize = require("../config/connection");
+const { User, Image } = require("../models");
 
 const users = [
-    {
-        username:"Lucasss",
-        password:"password"
-    },
-    {
-        username:"realjoe",
-        password:"password1"
-    },
-    {
-        username:"yi",
-        password:"Password1"
-    }
-]
-const addUser = async ()=>{
-    try{
-        await sequelize.sync({force:true})
-        await User.bulkCreate(users,{
-            individualHooks:true
-            
-        });
-        process.exit(0);
-    } catch(err){
-        console.log(err)
-    }
-}
+  {
+    username: "Lucasss",
+    password: "password",
+    email: "test.test@test",
+  },
+];
+const addUser = async () => {
+  try {
+    await sequelize.sync({ force: true });
+    await User.bulkCreate(users, {
+      individualHooks: true,
+    });
+    process.exit(0);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-addUser()
+addUser();

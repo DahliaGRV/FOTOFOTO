@@ -1,26 +1,33 @@
- <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body">
-            <h3 class="uk-card-title">Sign Up</h3>
-            <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">Name:</label>
-        <hr>
-        <input class="uk-input uk-form-width-large" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <hr>
-        <input class="uk-input uk-form-width-large" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <hr>
-        <input class="uk-input uk-form-width-large" type="password" id="password-signup" />
-      </div>
-      <hr>
-      <div class="form-group">
-        <button class="uk-button uk-button-default" type="submit">Signup</button>
-      </div>
-    </form>
-        </div>
-    </div>
+<form class="form signup-form" id="signup">
+  <div class="form-group">
+    <label for="name-signup">name:</label>
+    <input
+      class="uk-input uk-form-width-large"
+      type="text"
+      id="signupUsername"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email-signup">email:</label>
+    <input class="uk-input uk-form-width-large" type="text" id="signupEmail" />
+  </div>
+  <div class="form-group">
+    <label for="password-signup">password:</label>
+    <input
+      class="uk-input uk-form-width-large"
+      type="password"
+      id="signupPassword"
+    />
+  </div>
+  <div class="form-group">
+    <button class="uk-button uk-button-default" type="submit">signup</button>
+  </div>
+</form>
+
+<h2>Login</h2>
+<form action="" id="login">
+  <input type="text" placeholder="username" id="loginUsername" />
+  <input type="password" placeholder="password" id="loginPassword" />
+  <button>Login!</button>
+</form>
+<script src="/js/login.js"></script>

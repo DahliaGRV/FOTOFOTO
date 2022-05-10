@@ -71,6 +71,7 @@ const myWidget = cloudinary.createUploadWidget(
   (error, result) => {
     if (!error && result && result.event === "success") {
       console.log("Done! Here is the image info: ", result.info);
+
       document
         .getElementById("uploadedimage")
         .setAttribute("src", result.info.secure_url);
@@ -86,3 +87,17 @@ document.getElementById("upload_widget").addEventListener(
   },
   false
 );
+const urlHandler = async (event) => {
+  // event.preventDefault();
+  const response = await fetch("/upload", {
+    method: "POST",
+    body: JSON.stringify({}),
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (response.ok) {
+    document.location.replace("/");
+  } else {
+    alert("Failed to log in");
+  }
+};
