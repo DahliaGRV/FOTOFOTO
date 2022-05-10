@@ -29,7 +29,7 @@ document.querySelector("#signup").addEventListener("submit", (e) => {
     password: document.querySelector("#signupPassword").value,
   };
   console.log(userObj);
-  fetch("/api/users/", {
+  fetch("/", {
     method: "POST",
     body: JSON.stringify(userObj),
     headers: {
