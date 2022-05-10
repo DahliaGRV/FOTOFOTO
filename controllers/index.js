@@ -1,9 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-
 const userRoutes = require("./api/userRoutes");
-router.use("/api/users",userRoutes)
+router.use("/api/users", userRoutes);
 
 const signUpRoutes = require("./signUpRoutes");
 router.use("/", signUpRoutes);
@@ -22,5 +21,12 @@ router.use("/editor", editorRoutes);
 
 const accountPageRoutes = require("./accountPageRoutes");
 router.use("/account", accountPageRoutes);
+
+// router.get("/secretclub",(req,res)=>{
+//     if(!req.session.user){
+//         return res.status(401).json({msg:"ya gotta login to join the club!"})
+//     }
+//     res.json({msg:`welcome to the club ${req.session.user.username}`})
+// })
 
 module.exports = router;

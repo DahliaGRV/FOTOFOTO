@@ -1,8 +1,11 @@
-const router = require('express').Router();
-const express = require('express');
+const router = require("express").Router();
+const express = require("express");
 
-router.get('/', (req, res) => {
-    res.render("library")
-   });
+router.get("/", (req, res) => {
+  if (!req.session.user) {
+    return res.redirect("/");
+  }
+  res.render("library");
+});
 
-   module.exports = router;
+module.exports = router;
