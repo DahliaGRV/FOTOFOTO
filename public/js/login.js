@@ -1,5 +1,5 @@
 console.log("login linked1");
-document.querySelector("#login").addEventListener("submit", (e) => {
+document.querySelector("#login").addEventListener("click", (e) => {
   e.preventDefault();
   const userObj = {
     username: document.querySelector("#loginUsername").value,

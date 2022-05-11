@@ -14,17 +14,9 @@ const myWidget = cloudinary.createUploadWidget(
     uploadPreset: uploadPreset,
     sources: [
       "local",
-      "url",
       "camera",
-      "image_search",
       "google_drive",
-      "facebook",
       "dropbox",
-      "instagram",
-      "shutterstock",
-      "getty",
-      "istock",
-      "unsplash"
   ],
   googleApiKey: "<image_search_google_api_key>",
   showAdvancedOptions: true,
