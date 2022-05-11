@@ -4,6 +4,9 @@ const router = express.Router();
 const userRoutes = require("./api/userRoutes");
 router.use("/api/users", userRoutes);
 
+const imageRoutes = require("./api/imageRoutes");
+router.use("/api/images", imageRoutes);
+
 const signUpRoutes = require("./signUpRoutes");
 router.use("/", signUpRoutes);
 
