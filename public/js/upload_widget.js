@@ -56,6 +56,19 @@ const myWidget = cloudinary.createUploadWidget({
                 //   .getElementById("uploadedimage")
                 //   .setAttribute("src", result.info.secure_url);
                 console.log(result.info.secure_url, "this is the url");
+                fetch("/api/images",{
+                    method:"POST",
+                    body: JSON.stringify(result.info),
+                    headers:{
+                        "Content-Type":"application/json"
+                    }
+                }).then(res=>{
+                    if(res.ok){
+                       location.reload()
+                    } else {
+                        alert("trumpet sound")
+                    }
+                })
                 // const newImage = result.info.secure_url
             }
         }

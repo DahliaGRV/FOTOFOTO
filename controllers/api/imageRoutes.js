@@ -4,8 +4,8 @@ const router = express.Router();
 const { Image } = require("../../models");
 
 
-router.get("/images", (req, res) => {
-    User.findAll({})
+router.get("/", (req, res) => {
+    Image.findAll({})
         .then((dbImages) => {
             console.log(dbImages);
             res.json(dbImages);
@@ -16,11 +16,17 @@ router.get("/images", (req, res) => {
         });
 });
 
-router.post("/api/images", (req, res) => {
+router.post("/", (req, res) => {
     Image.create({
-        where: {
-            filename: result.info.secure_url
-        }
-    })
-});
-module.exports = Image
+            filename:req.body.secure_url
+          })
+            .then(newImage => {
+                console.log(newImage)
+              res.json(newImage);
+            })
+            .catch(err => {
+              console.log(err);
+              res.status(500).json({ msg: "an error occured", err });
+            });
+        });
+module.exports = router
