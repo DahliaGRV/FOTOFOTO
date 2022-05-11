@@ -31,32 +31,61 @@ router.get("/:id", (req, res) => {
     });
 });
 
-//create user
-router.post("/login", (req, res) => {
-  User.findOne({
-    where: {
-      username: req.body.username,
-    },
-  })
-    .then((foundUser) => {
-      if (!foundUser) {
-        return res.status(400).json({ msg: "wrong login credentials" });
-      }
-      if (bcrypt.compareSync(req.body.password, foundUser.password)) {
-        req.session.user = {
-          id: foundUser.id,
-          username: foundUser.username,
-        };
-        return res.json(foundUser);
-      } else {
-        return res.status(400).json({ msg: "wrong login credentials" });
-      }
+//Login user
+router.post('/login', async (req, res) => {
+  try {
+    const userData = await User.findOne({
+      where: {
+        username: req.body.username,
+      },
     })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ msg: "an error occured", err });
-    });
-});
+    if (!userData) {
+      return res.status(400).json({ msg: "wrong login credentials" });
+    }
+    if (bcrypt.compareSync(req.body.password, userData.password)) {
+      req.session.user = {
+        id: userData.id,
+        username: userData.username,
+      };
+      const cleanData = userData.get({ plain: true });
+      console.log(cleanData);
+      res.render('homepage', cleanData);
+    }
+  } catch (err){
+  console.log(err);
+      res.status(500).json({ msg: "an error occured", err })
+  }
+  })
+
+
+// router.post("/login", (req, res) => {
+//   User.findOne({
+//     where: {
+//       username: req.body.username,
+//     },
+//   })
+//     .then((foundUser) => {
+//       if (!foundUser) {
+//         return res.status(400).json({ msg: "wrong login credentials" });
+//       }
+//       const cleanData = foundUser.get({plain:true});
+//     })
+//       .then((cleanData)=>{
+//       if (bcrypt.compareSync(req.body.password, cleanData.password)) {
+//         req.session.user = {
+//           id: cleanData.id,
+//           username: cleanData.username,
+//         };
+//         res.render("homepage",cleanData);
+//       } else {
+//         return res.status(400).json({ msg: "wrong login credentials" });
+//       }
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json({ msg: "an error occured", err });
+//     });
+//   });
 
 //update user
 router.put("/:id", (req, res) => {

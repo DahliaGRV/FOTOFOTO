@@ -13,6 +13,7 @@ document.querySelector("#login").addEventListener("click", (e) => {
       "Content-Type": "application/json",
     },
   }).then((res) => {
+    console.log(res);
     if (res.ok) {
       location.href = "/homepage";
     } else {
