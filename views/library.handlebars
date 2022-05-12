@@ -5,10 +5,10 @@
     {{!-- <img class="uk-comment-avatar src="" width="" height="" alt="" --}}
 
 </header class="uk-heading-divider">
-{{#each user.images.filename}}
+{{#each images}}
 <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid></ul>
     <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)"><img src= {{images.filename}} alt=""></div>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)"><img src= {{filename}} alt=""></div>
     </li>
     </ul>
     <button>Delete</button>
