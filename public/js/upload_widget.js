@@ -13,7 +13,6 @@ const myWidget = cloudinary.createUploadWidget({
             uploadPreset: uploadPreset,
             sources: [
                 "local",
-                "camera",
                 "google_drive",
                 "dropbox",
             ],
