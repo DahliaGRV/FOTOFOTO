@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
     Image.create({
+            user_id: req.session.user.id,
             filename:req.body.secure_url
           })
             .then(newImage => {
