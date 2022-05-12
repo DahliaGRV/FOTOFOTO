@@ -1,0 +1,69 @@
+<h1 class="uk-heading-line uk-position-medium uk-text-right"><span><button class="uk-button uk-button-default"
+      uk-toggle="target: #my-login" type="button">Login</button></span></h1>
+
+<div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-position-center uk-light">
+  <h3 class="uk-card-title">Sign Up!</h3>
+  <form class="form signup-form" id="signup">
+    <div class="form-group">
+      <label for="name-signup"> Username:</label>
+      <br />
+      <input
+        class="uk-input uk-form-width-large"
+        type="text"
+        id="signupUsername"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email-signup">Email:</label>
+      <br />
+      <input
+        class="uk-input uk-form-width-large"
+        type="text"
+        id="signupEmail"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password-signup">Password:</label>
+      <br />
+      <input
+        class="uk-input uk-form-width-large"
+        type="password"
+        id="signupPassword"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <button class="uk-button uk-button-default" type="submit">signup</button>
+    </div>
+  </form>
+</div>
+
+
+<div id="my-login" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <h2 class="uk-modal-title">Login Below:</h2>
+      <form class="form login-form" id="login">
+    <div class="form-group">
+      <label for="name-login"> Username:</label>
+      <br />
+      <input
+        class="uk-input uk-form-width-large"
+        type="text"
+        id="loginUsername"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password-login">Password:</label>
+      <br />
+      <input
+        class="uk-input uk-form-width-large"
+        type="password"
+        id="loginPassword"
+      />
+    </div>
+    <br>
+    <button class="uk-modal-close uk-button uk-button-defualt"type="button">Login</button>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>
