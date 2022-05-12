@@ -30,4 +30,19 @@ router.post("/", (req, res) => {
               res.status(500).json({ msg: "an error occured", err });
             });
         });
+// ============library image delete============
+        router.delete("/:id", (req, res) => {
+          Image.destroy({
+            where: {
+              id: req.params.id,
+             }
+           }).then(delImage => {
+             res.json(delImage);
+           })
+           .catch(err => {
+             console.log(err);
+             res.status(500).json({ msg: "an error occured", err });
+           });
+         });
+
 module.exports = router

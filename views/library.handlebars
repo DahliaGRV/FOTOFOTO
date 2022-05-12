@@ -4,50 +4,62 @@
     <p class="uk-text-center"> Inspirational Quoteeeeee </p>
     {{!-- <img class="uk-comment-avatar src="" width="" height="" alt="" --}}
 
-</header class="uk-heading-divider">
-{{#each images}}
-<ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid></ul>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)"><img src= {{filename}} alt=""></div>
-    </li>
+</header class=" uk-heading-divider">
+    <ul class="uk-grid-small  uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+        {{#each images}}
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:rgb(75, 72, 72)">
+                <img src={{filename}} alt=""></div>
+        <button class="uk-button uk-button-default delete" id={{id}}>Delete</button>
+        </li>
+        {{/each}}
+
     </ul>
-    <button>Delete</button>
-    <hr>
-{{/each}}
 
-{{!-- <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)"><img src="/Assets/TenHun turtle.jpg" alt=""></div>
-    <button>Delete</button>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Seasons.jpg" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Owl by Mindy Barker.jpg" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/M.C. Escher.jpg" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Melt Skull.jpg" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Pop Art.webp" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Racoon.jpg" alt=""></div>
-    </li>
-    <li>
-        <div class="uk-card uk-card-default uk-card-body uk-text-center"style="background-color:rgb(75, 72, 72)"><img src="/Assets/Cartooony.webp" alt=""></div>
-    </li>
-</ul> --}}
-<br>
-<br>
-<br>
-<br>
+    {{!-- <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/TenHun turtle.jpg" alt=""></div>
+            <button>Delete</button>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Seasons.jpg" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Owl by Mindy Barker.jpg" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/M.C. Escher.jpg" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Melt Skull.jpg" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Pop Art.webp" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Racoon.jpg" alt=""></div>
+        </li>
+        <li>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
+                <img src="/Assets/Cartooony.webp" alt=""></div>
+        </li>
+    </ul> --}}
+    <br>
+    <br>
+    <br>
+    <br>
 
-<footer>
-    <hr class="uk-divider-icon">
-    <h4 class=" uk-text-center"><span><a class="uk-link-muted" href="/api/users/logout">Logout</a></span></h4>
-</footer>
+    <footer>
+        <hr class="uk-divider-icon">
+        <h4 class=" uk-text-center"><span><a class="uk-link-muted" href="/api/users/logout">Logout</a></span></h4>
+    </footer>
+
+
+<script src="/js/libary.js"></script>
