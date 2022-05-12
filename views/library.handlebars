@@ -1,7 +1,5 @@
-<body>
+<body style="background-image: url('/Assets/corkboard.jpg');">
     
-
-<p style="background-image: url('/Assets/corkboard.jpg');"></p>
 <header>
 
     <h1 class="uk-heading uk-text-center">Library</h1>
@@ -12,9 +10,10 @@
     <ul class="uk-grid-small  uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
         {{#each images}}
         <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:rgb(75, 72, 72)">
-                <img src={{filename}} alt=""></div>
-        <button class="uk-button uk-button-default delete" id={{id}}>Delete</button>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:white; border:black 5px solid">
+                <img src={{filename}} alt="" style="border: black solid 2px;">
+        <button class="uk-button uk-button-default delete  uk-dark uk-margin uk-margin-medium-top" id={{id}}>Delete</button>
+        </div>
         </li>
         {{/each}}
 
@@ -59,13 +58,18 @@
     <br>
     <br>
     <br>
-<nav class="uk-navbar-container uk-position-bottom " uk-navbar>
+{{!-- <nav class="uk-navbar-container uk-position-bottom " uk-navbar>
     <div class="uk-navbar-center">
       <p class=" uk-navbar-item uk-link-muted uk-text-large"><a href="/homepage">|  Home   |</a></p>
       <div class="uk-navbar-center-right"><div>
         <p class=" uk-navbar-item uk-link-muted uk-text-large"><a href="/api/users/logout">|   Logout  | </a></p>
       </div>
-</nav>
+</nav> --}}
+<footer class="footer">
+    <div  style="background-color:rgb(128, 97, 156) !important; padding: 1% 50% 0.5% 50%;">
+    <p><a class="uk-link-muted uk-text-large" style="margin-right:50px"href="/homepage">|Home|</a><a class="uk-link-muted uk-text-large"href="/api/users/logout">|Logout|</a></p>
+    </div>
+</footer>
 </body>
 
 <script src="/js/libary.js"></script>

@@ -1,0 +1,10 @@
+.footer {
+    position: sticky;
+    bottom:0px;
+    z-index: 3;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    background-color:purple !important;
+    opacity:85%;
+}
