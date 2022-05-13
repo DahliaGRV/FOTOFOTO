@@ -1,6 +1,6 @@
-# crispy-guacamole
+# FOTOFOTO
 - The URL of the functional, deployed application:
-
+https://fotofotolibrary.herokuapp.com/
 
 ## Table of Contents
 
@@ -9,8 +9,7 @@
 - [Mock-Up](#mock-up)
 - [Questions](#questions)
 
----
-Credits
+## Credits
 ==
 
 - [Dahlia Graves](https://github.com/DahliaGRV) - Git Admin/
@@ -23,14 +22,17 @@ Credits
 - 
 ## Descripttion
 
-
-
+A wondeful photo editing site with a unique user experience.
 
 ---
 
 ## Installation
 
-Use [express](https://www.npmjs.com/package/express)
+This application’s folder structure follow the Model-View-Controller paradigm.
+
+-Cloudinary - Media Library, Upload widget
+-TOAST UI - Editor Widget
+-UiKit css - framework
 
 ---
 
