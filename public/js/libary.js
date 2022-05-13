@@ -19,18 +19,3 @@ document.querySelectorAll(".delete").forEach((deleteBtn)=>{
 
  
  
-// const delButtonHandler = async (event) => {
-//     if (event.target.hasAttribute('delete')) {
-//       const id = event.target.getAttribute('delete');
-  
-//       const response = await fetch(`/api/images/${id}`, {
-//         method: 'DELETE',
-//       });
-  
-//       if (response.ok) {
-//         document.location.replace('/libary');
-//       } else {
-//         alert('Failed to delete image');
-//       }
-//     }
-//   };
