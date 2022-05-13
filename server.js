@@ -17,15 +17,15 @@ const { User } = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const sess = {
-  secret: process.env.SESSION_SECRET,
-  cookie: {
-    maxAge: 2 * 60 * 60 * 1000,
-  },
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize,
-  }),
+    secret: process.env.SESSION_SECRET,
+    cookie: {
+        maxAge: 2 * 60 * 60 * 1000,
+    },
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize,
+    }),
 };
 app.use(session(sess));
 // Static directory
@@ -37,8 +37,8 @@ app.set("view engine", "handlebars");
 
 app.use("/", allRoutes);
 
-sequelize.sync({ force: false }).then(function () {
-  app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
-  });
+sequelize.sync({ force: false }).then(function() {
+    app.listen(PORT, function() {
+        console.log("App listening on PORT " + PORT);
+    });
 });
