@@ -11,6 +11,7 @@
         {{#each images}}
         <li>
             <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:white; border:black 5px solid">
+                <i class="fa-solid fa-thumbtack fa-2xl uk-margin-small-bottom"  ></i>
                 <img src={{filename}} alt="" style="border: black solid 2px;">
         <button class="uk-button uk-button-default delete  uk-dark uk-margin uk-margin-medium-top" id={{id}}>Delete</button>
         </div>
@@ -58,15 +59,8 @@
     <br>
     <br>
     <br>
-{{!-- <nav class="uk-navbar-container uk-position-bottom " uk-navbar>
-    <div class="uk-navbar-center">
-      <p class=" uk-navbar-item uk-link-muted uk-text-large"><a href="/homepage">|  Home   |</a></p>
-      <div class="uk-navbar-center-right"><div>
-        <p class=" uk-navbar-item uk-link-muted uk-text-large"><a href="/api/users/logout">|   Logout  | </a></p>
-      </div>
-</nav> --}}
 <footer class="footer">
-    <div  style="background-color:rgb(128, 97, 156) !important; padding: 1% 50% 0.5% 50%;">
+    <div  style="background-color:rgb(128, 97, 156) !important; padding: 0.5% 50% 0.5% 50%;">
     <p><a class="uk-link-muted uk-text-large" style="margin-right:50px"href="/homepage">|Home|</a><a class="uk-link-muted uk-text-large"href="/api/users/logout">|Logout|</a></p>
     </div>
 </footer>
