@@ -1,10 +1,12 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
 <link href="/Css/homepage.style.css" rel='stylesheet' type='text/css'>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<header>
+<script src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
 
+<div id="guideline">
+<header>
     <h1 class="uk-heading uk-text-center">Welcome {{username}}</h1>
-    <p class="uk-text-center"> Inspirational Quoteeeeee </p>
+    <img src="/Assets/FotofotoLogo.jpg" width="150" height="150" alt="" id="logo">
     {{!-- <img class="uk-comment-avatar src="" width="" height="" alt="" --}}
 
 </header class="uk-heading-divider">
@@ -13,7 +15,7 @@
 <hr class="uk-divider-icon">
 <br>
 
-<div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+<div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true; autoplay: true; autoplay-interval: 2500">
 
     <ul class="uk-slider-items uk-grid">
         <li class="uk-width-3-4">
@@ -36,7 +38,7 @@
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="/Assets/library.png" width="500" height="150" alt="">
+                <img src="/Assets/polaroid.png" width="500" height="150" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h1><a class="uk-link-muted" href="/library">Library</a></h1>
                     <p class="uk-margin-remove" style="height:20px">View your image library!</p>
@@ -45,7 +47,7 @@
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
-                <img src="/Assets/journal.png" width="500" height="150" alt="">
+                <img src="/Assets/User.png" width="500" height="150" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h1><a class="uk-link-muted" href="/account">Account</a></h1>
                     <p class="uk-margin-remove" style="height:20px">Update your user account!</p>
@@ -63,8 +65,8 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small" style="height:100px; width:50px" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small" style="height:100px; width:50px" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <a class="uk-position-center-left uk-position-large" href="#" uk-slidenav-previous uk-width-large uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
 <hr class="uk-divider-icon">
@@ -85,21 +87,13 @@
     <br>
     <br>
 
-<div id='stars'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
-<div id='title'>
-  <span>
-    FOTO FOTO
-  </span>
-  <br>
-</div>
 
 <footer class="footer">
     <div  style="background-color:rgb(128, 97, 156) !important; padding: 1% 50% 0.5% 50%;">
     <p><a class="uk-link-muted uk-text-large"href="/api/users/logout">|Logout|</a></p>
     </div>
 </footer>
+</div>
 
 <script src="/js/login.js"></script>
 <script src="/js/homepage.js"></script> 
