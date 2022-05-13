@@ -38,12 +38,7 @@ document.querySelector("#signup").addEventListener("submit", (e) => {
         },
     }).then((res) => {
         if (res.ok) {
-            UIkit.notification({
-                // message: 'my-message!',
-                status: 'primary',
-                pos: 'top-right',
-                timeout: 2500
-            });
+            location.href = "/homepage"
         } else {
             alert("User cannot be created");
         }
