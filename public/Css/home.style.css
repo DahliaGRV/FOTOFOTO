@@ -1,3 +1,6 @@
+* {
+    font-family: 'Kaushan Script' !important;
+}
 canvas {
     display: block;
     width: 100vw;
