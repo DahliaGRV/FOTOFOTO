@@ -1,10 +1,13 @@
-
+<link rel="stylesheet" href="/Css/library.style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <body style="background-image: url('/Assets/corkboard.jpg');">
     
 <header style="padding-top: 3%; padding-bottom:3%">
  <a title="Logout" class="uk-position-absolute" href="/api/users/logout" id=""  style="z-index:5; margin-top:2%; margin-left:3%; color:black" uk-icon="icon: sign-out; ratio: 4"></a>
       <a title="Home"class="uk-position-absolute" href="/homepage" id="homeBtn" style="z-index:5; margin-top:1.70%; margin-left: 8%; color:black"uk-icon="icon: home; ratio: 4"></a>
-    <h1 class="uk-heading uk-text-center" style="background-color:azure; padding-top: 1%; padding-bottom:1%; border-radius:50%; margin-left:40%; margin-right:40%; opacity:85%; font-weight:bold; font-size: 40px ">Library</h1>
+    <h1 class="uk-heading uk-text-center" style="background-color:azure; padding-top: 1%; padding-bottom:1%; border-radius:50%; margin-left:40%; margin-right:40%; opacity:85%; font-weight:bold; font-size: 40px; box-shadow:2px 2px;">Library</h1>
    
     {{!-- <img class="uk-comment-avatar src="" width="" height="" alt="" --}}
 
@@ -12,7 +15,7 @@
     <ul class="uk-grid-small  uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
         {{#each images}}
         <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:white; border:black 5px solid">
+            <div class="uk-card uk-card-default uk-card-body uk-text-center " style=" background-color:white; border:black 5px solid;  box-shadow: 10px 5px 5px rgb(56, 53, 53)">
                 <i class="fa-solid fa-thumbtack fa-2xl uk-margin-small-bottom"  ></i>
                 <img src={{filename}} alt="" style="border: black solid 2px;">
         <button class="uk-button uk-button-default delete  uk-dark uk-margin uk-margin-medium-top" id={{id}}>Delete</button>
