@@ -12,11 +12,6 @@ const images = [
   {
     user_id: 1,
     filename:
-      "http://drive.google.com/file/d/11YwrUbaDSAtmJ2o5jvVcnqfGtaTZuCSC/view?usp=sharing",
-  },
-  {
-    user_id: 1,
-    filename:
       "https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-Alamy-BXWK5E_vvmkuf.jpg",
   },
   {
