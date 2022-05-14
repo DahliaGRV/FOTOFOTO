@@ -1,9 +1,11 @@
+
 <body style="background-image: url('/Assets/corkboard.jpg');">
     
-<header>
-
-    <h1 class="uk-heading uk-text-center">Library</h1>
-    <p class="uk-text-center"> Inspirational Quoteeeeee </p>
+<header style="padding-top: 3%; padding-bottom:3%">
+ <a title="Logout" class="uk-position-absolute" href="/api/users/logout" id=""  style="z-index:5; margin-top:2%; margin-left:3%; color:black" uk-icon="icon: sign-out; ratio: 4"></a>
+      <a title="Home"class="uk-position-absolute" href="/homepage" id="homeBtn" style="z-index:5; margin-top:1.70%; margin-left: 8%; color:black"uk-icon="icon: home; ratio: 4"></a>
+    <h1 class="uk-heading uk-text-center" style="background-color:azure; padding-top: 1%; padding-bottom:1%; border-radius:50%; margin-left:40%; margin-right:40%; opacity:85%; font-weight:bold; font-size: 40px ">Library</h1>
+   
     {{!-- <img class="uk-comment-avatar src="" width="" height="" alt="" --}}
 
 </header class=" uk-heading-divider">
@@ -20,51 +22,12 @@
 
     </ul>
 
-    {{!-- <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@s" uk-sortable="handle: .uk-card" uk-grid>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center " style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/TenHun turtle.jpg" alt=""></div>
-            <button>Delete</button>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Seasons.jpg" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Owl by Mindy Barker.jpg" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/M.C. Escher.jpg" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Melt Skull.jpg" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Pop Art.webp" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Racoon.jpg" alt=""></div>
-        </li>
-        <li>
-            <div class="uk-card uk-card-default uk-card-body uk-text-center" style="background-color:rgb(75, 72, 72)">
-                <img src="/Assets/Cartooony.webp" alt=""></div>
-        </li>
-    </ul> --}}
+  
     <br>
     <br>
     <br>
     <br>
-<footer class="footer">
-    <div  style="background-color:rgb(128, 97, 156) !important; padding: 0.5% 50% 0.5% 50%;">
-    <p><a class="uk-link-muted uk-text-large" style="margin-right:50px"href="/homepage">|Home|</a><a class="uk-link-muted uk-text-large"href="/api/users/logout">|Logout|</a></p>
-    </div>
-</footer>
+
 </body>
 
 <script src="/js/libary.js"></script>
-

@@ -1,0 +1,12 @@
+/* canvas {
+    background: linear-gradient(hsl(200, 50%, 80%) 0%, hsl(200, 30%, 95%) 75%);
+    display: block;
+} */
+* {
+    font-family: 'Kaushan Script' !important;
+}
+
+canvas {
+    background: linear-gradient(#ffeace, #b3d5e6);
+    display: block;
+}
