@@ -1,8 +1,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+<script src="uikit/dist/js/uikit-icons.min.js"></script>
 <link rel="stylesheet" href="/Css/home.style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
-<h1 class="uk-heading-line uk-position-medium uk-text-right"><span><button class="uk-button uk-button-default"
-      uk-toggle="target: #my-login" type="button">Login</button></span></h1>
+
+<div id="headerContainer">
+  <div id=" logoContainer">
+    <img src="/Assets/FotofotoLogo.jpg" width="150" height="150" alt="" id="logo">
+  </div>
+    <h1 class="uk-heading-line uk-position-medium uk-text-right">
+  <div id="loginContainer">
+      <span>
+        <button class="uk-button uk-button-default" uk-toggle="target: #my-login" type="button">Login</button>
+      </span>
+  </div>
+</div>
+    </h1>
+
 
 <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-position-center uk-light">
   <h3 class="uk-card-title">Sign Up!</h3>
@@ -10,29 +28,17 @@
     <div class="form-group">
       <label for="name-signup"> Username:</label>
       <br />
-      <input
-        class="uk-input uk-form-width-large"
-        type="text"
-        id="signupUsername"
-      />
+      <input class="uk-input uk-form-width-large" type="text" id="signupUsername" />
     </div>
     <div class="form-group">
       <label for="email-signup">Email:</label>
       <br />
-      <input
-        class="uk-input uk-form-width-large"
-        type="text"
-        id="signupEmail"
-      />
+      <input class="uk-input uk-form-width-large" type="text" id="signupEmail" />
     </div>
     <div class="form-group">
       <label for="password-signup">Password:</label>
       <br />
-      <input
-        class="uk-input uk-form-width-large"
-        type="password"
-        id="signupPassword"
-      />
+      <input class="uk-input uk-form-width-large" type="password" id="signupPassword" />
     </div>
     <br />
     <div class="form-group">
@@ -45,27 +51,19 @@
 <div id="my-login" uk-modal>
   <div class="uk-modal-dialog uk-modal-body">
     <h2 class="uk-modal-title">Login Below:</h2>
-      <form class="form login-form" id="login">
-    <div class="form-group">
-      <label for="name-login"> Username:</label>
-      <br />
-      <input
-        class="uk-input uk-form-width-large"
-        type="text"
-        id="loginUsername"
-      />
-    </div>
-    <div class="form-group">
-      <label for="password-login">Password:</label>
-      <br />
-      <input
-        class="uk-input uk-form-width-large"
-        type="password"
-        id="loginPassword"
-      />
-    </div>
-    <br>
-    <button class="uk-button uk-button-defualt"type="submit">Login</button>
+    <form class="form login-form" id="login">
+      <div class="form-group">
+        <label for="name-login"> Username:</label>
+        <br />
+        <input class="uk-input uk-form-width-large" type="text" id="loginUsername" />
+      </div>
+      <div class="form-group">
+        <label for="password-login">Password:</label>
+        <br />
+        <input class="uk-input uk-form-width-large" type="password" id="loginPassword" />
+      </div>
+      <br>
+      <button class="uk-button uk-button-defualt" type="submit">Login</button>
   </div>
 </div>
 

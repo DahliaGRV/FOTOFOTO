@@ -1,10 +1,30 @@
+
+* {
+    font-family: 'Kaushan Script' !important;
+}
+
 .footer {
-    position: sticky;
-    bottom: 0px;
-    z-index: 3;
-    text-align: center;
+   margin-bottom: 5%;
+}
+
+#footerLogout {
+    display: flex;
+    justify-content: space-evenly;
     text-decoration: none;
     color: black;
-    background-color: purple !important;
-    opacity: 85%;
+    font-size: 25px;
+    
 }
+
+#headerContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* #logoContainer {
+    display: flex;
+} */
+
+/* #loginContainer {
+    display: flex;
+} */

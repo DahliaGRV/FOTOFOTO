@@ -2,6 +2,9 @@ canvas {
     background: linear-gradient(hsl(200, 50%, 80%) 0%, hsl(200, 30%, 95%) 75%);
     display: block;
 }
+* {
+    font-family: 'Kaushan Script' !important;
+}
 
 #guideline {
     height: 100%;
@@ -15,5 +18,12 @@ canvas {
 #logo {
     display: flex;
     justify-content: center;
-    margin-left: 46%;
+    margin-right: 5%;
+
+}
+
+#userLogo {
+    display: flex;
+    align-items: center;
+
 }
