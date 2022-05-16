@@ -27,3 +27,18 @@ canvas {
     align-items: center;
 
 }
+@media screen and (max-width:425px) {
+
+    #HomepageLogoutBtn {
+        margin-top:135% !important;
+        margin-left: 42% !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #HomepageLogoutBtn {
+        margin-top:150% !important;
+        margin-left: 40% !important;
+    }
+}
