@@ -4,7 +4,7 @@
 
 ---
 
-## Description
+# Description
 
 Welcome to the FotoFoto library, a full-stack image library and robust photo-editing platform that aims to be a fun and simple way for users to upload their own photos and add a touch of personalization. This application also enables users to store their customized photos into their personal library and includes all the tools one can expect from a photo editing program, such as cropping, the ability to adjust brightness and contrast, and much more!
 
@@ -15,7 +15,7 @@ Check out our deployed project [here](https://fotofotolibrary.herokuapp.com/)!
 &nbsp;
 
 ---
-## Table of Contents
+# Table of Contents
 
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
@@ -26,13 +26,13 @@ Check out our deployed project [here](https://fotofotolibrary.herokuapp.com/)!
   - [Demo](#demo)
   - [Screenshots](#screenshots)
   - [Contributing](#contributing)
-  - [Credits](#credits)
+  - [Contact](#contact)
   - [License](#license)
 
 &nbsp;
 
 ---
-## Installation
+# Installation
 
 Instructions: 
 1. Fork the application repository from GitHub and clone this project to your machine.
@@ -43,7 +43,7 @@ Instructions:
 &nbsp;
 
 ---
-## Usage
+# Usage
 
 Once the project has been installed:
 1. Open the project file within your terminal
@@ -64,7 +64,7 @@ Once the project has been installed:
 &nbsp;
 
 ---
-## Technologies Used
+# Technologies Used
 
 General Technologies: 
 - [HTML](https://html.com/)
@@ -75,6 +75,7 @@ General Technologies:
 - [UIKit](https://getuikit.com/)
 - [ToastUIEditor](https://ui.toast.com/tui-editor)
 - [Cloudinary](https://cloudinary.com/)
+- [Codepen](https://codepen.io/)
 
 
 NPM Packages
@@ -92,7 +93,7 @@ NPM Packages
 &nbsp;
 
 ---
-## Acceptance-Criteria
+# Acceptance-Criteria
 Project requirements:
 - Must use a Node and Express web server
 - Must be backed by a MySQL database with a Sequelize ORM 
@@ -107,41 +108,60 @@ Project requirements:
 &nbsp;
 
 ---
-## Demo
+# Demo
 
-Check out this [video]() for a walk-through demonstration of this project.
+## Homepage
+![Homepage Demo](./public/assets/Homepage%20Demo.gif)
 
-&nbsp;
+## Uploading an image
+![Uploading Image](./public/assets/Upload%20Demo.gif)
 
----
-## Screenshots
+## Editing an image
+![Editing Image](./public/assets/Editor%20Demo.gif)
 
-Entity Relationship Diagram
-![ERD]()
+## Updating account
+![Updating Account](./public/assets/UpdateAccount.gif)
 
-Wireframe
-![Wireframe]()
-
-Screenshots
-![SignUp]()
-
-![Homepage]()
-
-![Library]()
-
-![Editor]()
 
 &nbsp;
 
 ---
-## Contributing
+# Screenshots
+
+## Wireframe
+![Wireframe](./public/Assets/WireFrame.png)
+
+## Sign Up Page
+![Signup Page](./public/assets/SignUp.JPG)
+
+## Homepage
+![Homepage](./public/assets/Homepage.JPG)
+
+## Library
+![Library](./public/assets/Library.JPG)
+
+## Editor
+![Editor](./public/assets/Editor.JPG)
+
+&nbsp;
+
+---
+# Contributing
 
 This project was completed as a collaborative group for Project 2 from the University of Washington Web Development Bootcamp. If you would like to contribute, please feel free to contact any of the team members with questions or comments.
 
 &nbsp;
 
 ---
-## Credits
+# Credits
+- [Codepen](https://codepen.io/) - animated backgrounds
+- [UIKit](https://getuikit.com/) - CSS framework
+- [ToastUIEditor](https://ui.toast.com/tui-editor) - image-editing platform
+- [Cloudinary](https://cloudinary.com/) - image-uploading platform
+- 
+
+---
+# Contact
 
 If you have any questions feel free to contact our team:
 - Dahlia Graves | [Github](https://github.com/DahliaGRV) | [email](Dahliag@uw.edu)
