@@ -4,6 +4,8 @@ const allRoutes = require("./controllers");
 const session = require("express-session");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+const favicon = require("serve-favicon")
+const path = require("path");
 
 // import chalk from 'chalk';
 // console.log(chalk.blue('Hello world!'));
@@ -14,6 +16,7 @@ const PORT = process.env.PORT || 3000;
 // Requiring our models for syncing
 const { User } = require("./models");
 // Sets up the Express app to handle data parsing
+app.use (favicon(path.join(__dirname,'public', 'favicon.ico')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const sess = {

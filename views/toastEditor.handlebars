@@ -7,15 +7,18 @@
     />
     <link type="text/css" href="https://uicdn.toast.com/tui-image-editor/latest/tui-image-editor.css" rel="stylesheet" />
     <style>
-      @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+      @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
       html,
       body {
         height: 100%;
         margin: 0;
       }
     </style>
+    <link rel="stylesheet" href="/Css/editor.style.css">
 
   <body>
+<a title="Logout" class="uk-position-absolute" href="/api/users/logout" id="editorLogoutBtn"  style="z-index:5; margin-top:3%; margin-left:3%; color:white" uk-icon="icon: sign-out; ratio: 4"></a>
+      <a title="Home"class="uk-position-absolute" href="/homepage" id="editorHomeBtn" style="z-index:5; margin-top:2.70%; margin-left: 8%; color:white"uk-icon="icon: home; ratio: 4"></a>
     <div id="tui-image-editor-container"></div>
 
     <script
@@ -38,8 +41,8 @@
       var imageEditor = new tui.ImageEditor('#tui-image-editor-container', {
         includeUI: {
           loadImage: {
-            path: "../img/sampleImage2.png",
-            name: 'SampleImage',
+            path: "../Assets/FotofotoLogo.jpg",
+            name: 'FotofotoLogo',
           },
           theme: blackTheme, // or whiteTheme
           initMenu: 'filter',

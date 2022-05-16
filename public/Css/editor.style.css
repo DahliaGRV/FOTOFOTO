@@ -1,0 +1,46 @@
+.tui-image-editor-header-logo {
+    display: none !important;
+}
+
+@media screen and (max-width:1024px) {
+    #editorHomeBtn {
+        margin-top:12% !important;
+        margin-left: 3% !important;
+    }
+ 
+    .lower-canvas {
+        max-width: 75% !important;
+        max-height: 75% !important;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #editorHomeBtn {
+        margin-top:15% !important;
+        margin-left: 3% !important;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #editorLogoutBtn {
+        margin-top: 17% !important;
+    }
+
+    #editorHomeBtn {
+        margin-top:17% !important;
+        margin-left: 70% !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #editorLogoutBtn {
+        margin-top: 17% !important;
+    }
+
+    #editorHomeBtn {
+        margin-top:17% !important;
+        margin-left: 70% !important;
+    }
+}
