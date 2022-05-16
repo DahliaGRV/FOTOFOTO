@@ -10,3 +10,25 @@ canvas {
     background: linear-gradient(#ffeace, #b3d5e6);
     display: block;
 }
+
+@media screen and (max-width:425px) {
+
+    #accountLogoutBtn {
+        margin-top:145% !important;
+        margin-left: 40% !important;
+    }
+
+    #accountHomeBtn {
+        margin-top:7% !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #accountLogoutBtn {
+        margin-top:180% !important;
+        margin-left: 40% !important;
+    }
+
+   
+}

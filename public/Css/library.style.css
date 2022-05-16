@@ -1,3 +1,15 @@
 * {
     font-family: 'Kaushan Script' !important;
 }
+
+
+@media screen and (max-width:425px) {
+    #libraryHomebtn {
+        margin-left: 72% !important;
+    }
+    #libraryTitle { 
+        background-color: transparent !important;
+        box-shadow: none !important;
+        margin-left: 30% !important;
+    }
+}
