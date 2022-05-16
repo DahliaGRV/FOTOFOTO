@@ -111,16 +111,16 @@ Project requirements:
 # Demo
 
 ## Homepage
-![Homepage Demo](./public/assets/Homepage%20Demo.gif)
+![Homepage Demo](./public/Assets/Homepage%20Demo.gif)
 
 ## Uploading an image
-![Uploading Image](./public/assets/Upload%20Demo.gif)
+![Uploading Image](./public/Assets/Upload%20Demo.gif)
 
 ## Editing an image
-![Editing Image](./public/assets/Editor%20Demo.gif)
+![Editing Image](./public/Assets/Editor%20Demo.gif)
 
 ## Updating account
-![Updating Account](./public/assets/UpdateAccount.gif)
+![Updating Account](./public/Assets/UpdateAccount.gif)
 
 
 &nbsp;
@@ -132,16 +132,16 @@ Project requirements:
 ![Wireframe](./public/Assets/WireFrame.png)
 
 ## Sign Up Page
-![Signup Page](./public/assets/SignUp.JPG)
+![Signup Page](./public/Assets/SignUp.JPG)
 
 ## Homepage
-![Homepage](./public/assets/Homepage.JPG)
+![Homepage](./public/Assets/Homepage.JPG)
 
 ## Library
-![Library](./public/assets/Library.JPG)
+![Library](./public/Assets/Library.JPG)
 
 ## Editor
-![Editor](./public/assets/Editor.JPG)
+![Editor](./public/Assets/Editor.JPG)
 
 &nbsp;
 
@@ -158,7 +158,6 @@ This project was completed as a collaborative group for Project 2 from the Unive
 - [UIKit](https://getuikit.com/) - CSS framework
 - [ToastUIEditor](https://ui.toast.com/tui-editor) - image-editing platform
 - [Cloudinary](https://cloudinary.com/) - image-uploading platform
-- 
 
 ---
 # Contact
