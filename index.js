@@ -40,9 +40,6 @@ app.set("view engine", "handlebars");
 
 app.use("/", allRoutes);
 
-const signUpRoutes = require("./signUpRoutes");
-router.use("/", signUpRoutes);
-
 sequelize.sync({ force: false }).then(function() {
     app.listen(PORT, function() {
         console.log("App listening on PORT " + PORT);
