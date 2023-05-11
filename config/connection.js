@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
+const mysql2 = require('mysql2');
 
 let sequelize;
 
@@ -7,6 +8,7 @@ let sequelize;
 // if (process.env.JAWSDB_URL) {
 //     sequelize = new Sequelize(process.env.JAWSDB_URL);
 // } else {
+
 sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
@@ -14,7 +16,8 @@ sequelize = new Sequelize(
     {
         host: 'localhost',
         dialect: 'mysql',
-        port: 3306
+        port: 3306,
+        dialectModule: mysql2,
     }
 );
 // }
