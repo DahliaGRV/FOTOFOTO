@@ -3,9 +3,9 @@ require('dotenv').config();
 const mysql2 = require('mysql2');
 let sequelize;
 // will let it be readable with JAWS in heroku
-// if (process.env.JAWSDB_URL) {
-//     sequelize = new Sequelize(process.env.JAWSDB_URL);
-// } else {
+if (process.env.JAWSDB_URL) {
+    sequelize = new Sequelize(process.env.JAWSDB_URL);
+} else {
 sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
@@ -17,7 +17,7 @@ sequelize = new Sequelize(
         dialectModule: mysql2,
     }
 );
-// }
+}
 try {
     sequelize.sync();
     sequelize.authenticate();
